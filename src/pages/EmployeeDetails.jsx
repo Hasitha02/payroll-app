@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import EmployeeHeader from "../components/EmployeeDetails/EmployeeHeader";
 import SectionNavigator from "../components/EmployeeDetails/SectionNavigator";
 import PersonalSection from "../components/EmployeeDetails/PersonalSection";
@@ -6,10 +7,16 @@ import JobSection from "../components/EmployeeDetails/JobSection";
 import SalarySection from "../components/EmployeeDetails/SalarySection";
 import OtherSection from "../components/EmployeeDetails/OtherSection";
 import ActionButtons from "../components/EmployeeDetails/ActionButtons";
-import { containerStyle, cardStyle, headerStyle, sectionContentStyle } from "../components/EmployeeDetails/styles";
+import {
+  containerStyle,
+  cardStyle,
+  headerStyle,
+  sectionContentStyle,
+} from "../components/EmployeeDetails/styles";
 
 const EmployeeDetails = () => {
   const [selectedSection, setSelectedSection] = useState("personal");
+  const navigate = useNavigate();
 
   const renderSection = () => {
     switch (selectedSection) {
@@ -29,18 +36,32 @@ const EmployeeDetails = () => {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
+        {/* Back Button */}
+        <button
+          onClick={() => navigate("/")}
+          style={{
+            backgroundColor: "#5f859fff",
+            color: "#fff",
+            padding: "6px 14px",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            marginBottom: "10px",
+          }}
+        >
+          ← Back to Home
+        </button>
+
         <h2 style={headerStyle}>Employee Details</h2>
 
         <EmployeeHeader />
 
-        <SectionNavigator 
-          selectedSection={selectedSection} 
-          setSelectedSection={setSelectedSection} 
+        <SectionNavigator
+          selectedSection={selectedSection}
+          setSelectedSection={setSelectedSection}
         />
 
-        <div style={sectionContentStyle}>
-          {renderSection()}
-        </div>
+        <div style={sectionContentStyle}>{renderSection()}</div>
 
         <ActionButtons />
       </div>
