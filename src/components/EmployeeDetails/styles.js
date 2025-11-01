@@ -10,7 +10,7 @@ export const containerStyle = {
 
 export const cardStyle = {
   width: "800px",
-  background: "#fff",
+  background: "#e8e5e5ff",
   padding: "30px",
   borderRadius: "12px",
   boxShadow: "0 10px 30px rgba(0,0,0,0.15)",

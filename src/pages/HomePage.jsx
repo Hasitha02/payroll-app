@@ -11,7 +11,7 @@ const HomePage = () => {
     borderRadius: "10px",
     border: "none",
     cursor: "pointer",
-    backgroundColor: "#3498db",
+    backgroundColor: "#1c3749ff",
     color: "white",
     fontWeight: "bold",
     boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
@@ -39,7 +39,7 @@ const HomePage = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #6873a2ff 0%, #ccccccff 100%)",
+        background: "linear-gradient(135deg, #6873a2ff 0%, #987171ff 100%)",
       }}
     >
       <h1 style={{ color: "white", marginBottom: "40px", fontSize: "36px" }}>

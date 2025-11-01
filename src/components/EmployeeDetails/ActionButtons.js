@@ -17,10 +17,10 @@ const ActionButtons = () => {
       background = "#6c757d";
       color = "#fff";
     } else if (btn === "New") {
-      background = "#007bff";
+      background = "#0156b2ff";
       color = "#fff";
     } else if (btn === "Edit") {
-      background = "#17a2b8";
+      background = "#106775ff";
       color = "#fff";
     }
 

@@ -7,7 +7,7 @@ const SectionNavigator = ({ selectedSection, setSelectedSection }) => {
     padding: "12px 20px",
     borderRadius: "8px",
     border: "2px solid #3498db",
-    background: isSelected ? "#3498db" : "transparent",
+    background: isSelected ? "#133449ff" : "transparent",
     color: isSelected ? "#fff" : "#3498db",
     cursor: "pointer",
     fontSize: "14px",
@@ -31,8 +31,8 @@ const SectionNavigator = ({ selectedSection, setSelectedSection }) => {
           style={buttonStyle(selectedSection === section)}
           onMouseOver={(e) => {
             if (selectedSection !== section) {
-              e.target.style.backgroundColor = "#3498db";
-              e.target.style.color = "#fff";
+              e.target.style.backgroundColor = "#da8a00ff";
+              e.target.style.color = "#ffffffff";
             }
           }}
           onMouseOut={(e) => {

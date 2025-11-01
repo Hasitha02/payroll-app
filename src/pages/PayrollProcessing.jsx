@@ -90,7 +90,7 @@ const PayrollProcessing = () => {
         style={{
           width: "90%",
           maxWidth: "900px",
-          backgroundColor: "#fff",
+          backgroundColor: "#e8e5e5ff",
           padding: "20px",
           borderRadius: "8px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
@@ -139,7 +139,7 @@ const PayrollProcessing = () => {
                 padding: "10px",
                 border: "1px solid #ccc",
                 backgroundColor:
-                  activeTab === tab ? "#3498db" : "rgba(255,255,255,0.9)",
+                  activeTab === tab ? "#0c588aff" : "rgba(255,255,255,0.9)",
                 color: activeTab === tab ? "#fff" : "#000",
                 cursor: "pointer",
                 transition: "0.3s",

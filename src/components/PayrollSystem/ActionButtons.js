@@ -2,7 +2,7 @@ import React from "react";
 
 const ActionButtons = () => {
   const buttons = [
-    { label: "Edit", color: "#17a2b8" },
+    { label: "Edit", color: "#106775ff" },
     { label: "Save", color: "#28a745" },
     { label: "Close", color: "#6c757d" }
   ];
